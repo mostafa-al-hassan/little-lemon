@@ -8,7 +8,7 @@ function Nav() {
   
     useEffect(() => {
     function handleResize() {
-      if (window.innerWidth > 700) {
+      if (window.innerWidth > 887) {
         setIsMenuOpen(true);
       }else {
         setIsMenuOpen(false);
