@@ -1,0 +1,41 @@
+
+.main{
+    display: grid;
+    grid-template-columns: 422px 375px;
+    background-color: #495E57;
+    justify-content: center;
+    grid-column-gap: 63px;
+    height: 406px;
+}
+
+.div1{
+    width: 422px;
+    margin-top: 47px;
+    margin-bottom: 28px;
+    
+    
+}
+.div1 h1{
+        font-size: 56px;
+        color: #F4CE14;
+}
+
+.div1 h2{
+        font-size: 40px;
+        margin-top: -48px;
+        color:white;
+}
+
+.div1 p{
+    margin-top: -15px;
+    text-align: left;
+    color:white;
+    font-size: 20px;
+}
+
+.img{
+    width: 375px;
+    height: 450px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
