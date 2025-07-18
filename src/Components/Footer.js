@@ -1,10 +1,11 @@
 import React from "react";
+import general_styles from '../index.css'
 
 function Footer(){
     return(
-        <footer>
+        <div className={general_styles.Footer}>
 
-        </footer>
+        </div>
     );
 }
 
