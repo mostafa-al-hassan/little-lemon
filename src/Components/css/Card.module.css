@@ -1,0 +1,36 @@
+.card{
+    background-color: #EDEFEE;
+    width: 264.67px;
+    padding-bottom: 10px;
+    border-radius: 15px 15px 0 0 ;
+    height: 450px;
+}
+
+
+.img{
+    width: 264.67px;
+    height: 185.26px;
+    border-radius: 15px 15px 0 0 ;
+    margin-bottom: 5px;
+}
+
+.content{
+    margin: 10px 25px 0 25px;
+}
+.h2{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.price{
+    color: #EE9972;
+}
+.p{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 65ch;
+    color: #495E57;
+    height: 150px;
+}
+
