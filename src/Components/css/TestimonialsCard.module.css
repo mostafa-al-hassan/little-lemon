@@ -1,0 +1,40 @@
+.card{
+    background-color: #efeeed;
+    width: 265px;
+    padding-bottom: 10px;
+    border-radius: 15px 15px 0 0 ;
+    height: 450px;
+    display: grid;
+    justify-content: center;
+}
+
+
+.img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50% ;
+    object-fit: cover;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.h1{
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 65ch;
+    color: #495E57;
+    
+}
+.Rating{
+    text-align: center;
+}

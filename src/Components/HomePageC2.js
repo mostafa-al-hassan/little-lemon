@@ -3,7 +3,7 @@ import greekSalad from '../Assets/greeksalad.jpg'
 import lemonDessert from '../Assets/lemon dessert.jpg'
 import bruchetta from '../Assets/bruchetta.svg'
 
-import general_styles from '../index.css'
+
 import Card from './Card'
 
 

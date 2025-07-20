@@ -1,0 +1,15 @@
+.form{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 15px;
+    justify-content: center;
+    background-color: aliceblue;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+label{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}

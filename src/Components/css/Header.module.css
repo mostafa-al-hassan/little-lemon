@@ -24,6 +24,7 @@
     grid-template-columns: repeat(6,auto);
     list-style-type: none;
     column-gap: 28px;
+    margin-top: -1px;
 }
 .menuClosed {
   display: none;

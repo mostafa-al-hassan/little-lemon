@@ -1,5 +1,5 @@
 import styles from './css/Card.module.css'
-import general_styles from '../index.css'
+
 
 
 
@@ -8,7 +8,7 @@ function Card(props) {
     return (
             <div className={styles.card}>
                 <div>
-                    <img src={props.Image} alt='greekSalad' className={styles.img} />
+                    <img src={props.Image} alt='food' className={styles.img} />
                     
                     <div className={styles.content}>
                     <h2 className={styles.h2}>{props.Name} <span className={styles.price}>                  {props.Price}</span></h2>
