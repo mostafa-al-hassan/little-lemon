@@ -39,7 +39,7 @@ function Nav() {
 
                 <ul className={isMenuOpen ? styles.menuOpen : styles.menuClosed}>
                     <li><a href='/'className={styles.aNav}>Home</a></li>
-                    <li><a href='/'className={styles.aNav}>About</a></li>
+                    <li><a href='#About'className={styles.aNav}>About</a></li>
                     <li><a href='/'className={styles.aNav}>Menu</a></li>
                     <li><a href='/'className={styles.aNav}>Reservations</a></li>
                     <li><a href='/'className={styles.aNav}>Order Online</a></li>

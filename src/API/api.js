@@ -10,7 +10,7 @@ export const fetchData = (date) => {
     }
   }
 
-  return result;
+  return ["Choose Time", ...result];
 };
 
 export const submitAPI = (formData) => {

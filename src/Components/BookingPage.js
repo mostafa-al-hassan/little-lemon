@@ -25,15 +25,22 @@ function BookingPage(props) {
             alert("Something went wrong with your reservation.");
         }
     };
-
+    const isFormValid =
+        date &&
+        time &&
+        guests >= 1 &&
+        guests <= 10 &&
+        occasion &&
+        time !== "Choose Time" &&
+        occasion !== "Choose Occasion";
     return (
 
         <form className={styles.form} onSubmit={handleSubmit}>
             <label htmlFor="res-date">Choose date</label>
-            <input type="date" id="res-date" value={date} onChange={(e) => { setDate(e.target.value); props.dispatch({ type: "dateChange", date: e.target.value }) }} />
+            <input type="date" id="res-date" value={date} onChange={(e) => { setDate(e.target.value); props.dispatch({ type: "dateChange", date: e.target.value }) }} required />
 
             <label htmlFor="res-time">Choose time</label>
-            <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)}>
+            <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)} required>
                 {availableTimes.map((t) => {
                     return (<option key={t}>{t}</option>)
 
@@ -42,17 +49,27 @@ function BookingPage(props) {
             </select>
 
             <label htmlFor="guests">Number of guests</label>
-            <input type="number" placeholder="1" min="1" max="10" id="guests"
-                value={guests} onChange={(e) => { setGuests(e.target.value) }} />
+            <input type="number"
+                placeholder="1"
+                min="1"
+                max="10"
+                id="guests"
+                value={guests}
+                onChange={(e) => {
+                    const value = parseInt(e.target.value, 10);
+                    if (value >= 1 && value <= 10) {
+                        setGuests(value);
+                    }
+                }} required />
 
             <label htmlFor="occasion">Occasion</label>
             <select id="occasion" value={occasion}
-                onChange={(e) => setOccasion(e.target.value)}>
-                <option>Choose Occasion</option>
-                <option>Birthday</option>
-                <option>Anniversary</option>
+                onChange={(e) => setOccasion(e.target.value)} required>
+                <option value="Choose Occasion" >Choose Occasion</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Anniversary">Anniversary</option>
             </select>
-            <input type="submit" value="Make Your reservation" onClick={handleSubmit} />
+            <input type="submit" value="Make Your reservation" onClick={handleSubmit} disabled={!isFormValid} />
         </form>
 
     );

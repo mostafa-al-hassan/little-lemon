@@ -3,7 +3,7 @@ import HomePage from './HomePage';
 import BookingPage from './BookingPage';
 import { fetchData, submitAPI } from '../API/api';
 
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ConfirmedBooking from './ConfirmedBooking';
 
 function Main() {
